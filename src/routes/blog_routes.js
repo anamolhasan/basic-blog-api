@@ -72,7 +72,7 @@ router.delete('/delete-post/:id', (req, res) => {
   if(!blogIndex === -1) return res.send(400).json({message: 'Blog not found!'})
 
     blogs.splice(blogIndex, 1)
-    res.status(200).json({message: 'Blog delete successfully!'})
+    res.status(200).json({message: 'Blog delete successfully'})
 })
 
 module.exports = router;
